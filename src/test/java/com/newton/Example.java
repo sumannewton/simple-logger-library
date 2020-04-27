@@ -7,7 +7,7 @@ import com.newton.model.LogLevel;
 import com.newton.model.LoggerType;
 import com.newton.model.SinkType;
 
-public class Main {
+public class Example {
 
   public static void main(String[] args) throws Exception {
 
@@ -15,7 +15,7 @@ public class Main {
     //Initialize
     Config config = Config.builder()
         .logConfig(LogConfig.builder()
-            .loggerType(LoggerType.ASYNC)
+            .loggerType(LoggerType.SYNC)
             .ts_format("dd-mm-yyyy-hh-mm-ss")
             .bufferSize(25)
             .build())
